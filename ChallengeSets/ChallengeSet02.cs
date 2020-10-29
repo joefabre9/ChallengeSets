@@ -8,6 +8,8 @@ namespace ChallengeSets
         public bool CharacterIsALetter(char c)
         {
             throw new NotImplementedException();
+            
+            
         }
 
         public bool CountOfElementsIsEven(string[] vals)

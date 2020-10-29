@@ -28,9 +28,10 @@ namespace ChallengeSets
         public int Add(int number1, int number2)
         {
             //throw new NotImplementedException();
-            var add1 = number1 + number2;
+            return number1 + number2;
+            /*var add1 = number1 + number2;
 
-            return add1;
+            return add1;*/
         }
 
         public int GetSmallestNumber(int number1, int number2)
