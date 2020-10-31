@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 namespace ChallengeSets
 {
     public class ChallengeSet02
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
-            
-            
+            //throw new NotImplementedException();
+            return Char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
