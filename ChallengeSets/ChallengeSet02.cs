@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace ChallengeSets
@@ -32,12 +33,32 @@ namespace ChallengeSets
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            throw new NotImplementedException();
+            //***must get help on this one
+            //throw new NotImplementedException();
+            if (numbers == null || numbers.Count() == 0)
+            {
+                return 0;
+            }
+            double minValue = 10000.00;
+            double maxValue = 0;
+            foreach (double dub in numbers.ToList())
+            {
+                if (dub < minValue)
+                {
+                    minValue = dub;
+                }
+                if (dub > maxValue)
+                {
+                    maxValue = dub;
+                }
+            }
+            return minValue + maxValue;
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return str1.Length < str2.Length ? str1.Length : str2.Length;
         }
 
         public int Sum(int[] numbers)
