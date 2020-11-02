@@ -63,22 +63,62 @@ namespace ChallengeSets
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return 0;
+            }
+            int sum = 0;
+            foreach (int i in numbers)
+            {
+                sum += i;
+            }
+            return sum;
         }
+        
 
         public int SumEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return 0;
+            }
+            int sumOfEvens = 0;
+            foreach (int i in numbers)
+            {
+                if (i % 2 == 0)
+                {
+                    sumOfEvens += i;
+                }
+            }
+            return sumOfEvens;
         }
+       
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (numbers == null)
+            {
+                return false;
+            }
+            int sum = Sum(numbers.ToArray());
+            return sum % 2 == 0 ? false : true;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            int oddsCounter = 0;
+            for (int i =0; i<number; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    oddsCounter++;
+                }
+            }
+            return oddsCounter;
         }
     }
 }
