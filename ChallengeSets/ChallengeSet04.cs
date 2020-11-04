@@ -107,17 +107,57 @@ namespace ChallengeSets
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            int itemCount = objs.Length;
+            int nullCount = 0;
+            foreach (object obj in objs)
+            {
+                if (obj == null) nullCount++;
+            }
+            if (nullCount > itemCount / 2)
+            {
+                return true;
+            }
+            return false;
         }
 
         public double AverageEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+            int evenSum = 0;
+            int evenCount = 0;
+            foreach (int i in numbers)
+            {
+                if (i % 2 == 0)
+                {
+                    evenSum += i;
+                    evenCount++;
+                }
+            }
+            if (evenCount == 0)
+            {
+                return 0;
+            }
+            return (double)evenSum / evenCount;
         }
 
         public int Factorial(int number)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (number < 0) throw new ArgumentOutOfRangeException();
+            if (number == 0) return 1;
+            if (number > 1)
+            {
+                return number * Factorial(number - 1);
+            }
+            else
+            {
+                return number;
+            }
         }
     }
 }
