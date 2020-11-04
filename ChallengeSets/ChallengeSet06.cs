@@ -38,62 +38,21 @@ namespace ChallengeSets
             return true;
         }
 
-       /* public int IndexOfLastUniqueLetter(string str)
+       public int IndexOfLastUniqueLetter(string str)
         {
-            //throw new NotImplementedException();
-            int lastUniqueIndex = -1;
-            int counter = 0;
-            var uniqueCharacters = GetUniqueCharacters(str);
-            foreach (var c in str)
-            {
-                if (uniqueCharacters.Contains(c))
-                {
-                    lastUniqueIndex = counter;
-                }
-                counter++;
-            }
-            return lastUniqueIndex;
+           throw new NotImplementedException();
+         
         }
-       */
+       
         public int MaxConsecutiveCount(int[] numbers)
         {
-            //throw new NotImplementedException();
-            if (numbers == null || numbers.Length == 0) return 0;
-            int previousNumber = numbers[0];
-            int currentConsecutive = 1;
-            int currentMaxConsecutive = 0;
-            for (int i = 1; i < numbers.Length; i++)
-            {
-                if (numbers[i] == previousNumber)
-                {
-                    currentConsecutive++;
-                }
-                if (currentConsecutive > currentMaxConsecutive)
-                {
-                    currentMaxConsecutive = currentConsecutive;
-                }
-                if (numbers[i] != previousNumber)
-                {
-                    currentConsecutive = 1;
-                }
-                previousNumber = numbers[i];
-            }
-            return currentMaxConsecutive;
+            throw new NotImplementedException();
+            
         }
 
         public double[] GetEveryNthElement(List<double> elements, int n)
         {
-            //throw new NotImplementedException();
-            if (elements == null || n < 0) return new double[0];
-            List<double> everyNthElement = new List<double>();
-            for (int i = 1; i <= elements.Count; i++)
-            {
-                if (i % n == 0)
-                {
-                    everyNthElement.Add(elements[i - 1]);
-                }
-            }
-            return everyNthElement.ToArray();
+            throw new NotImplementedException();
         }
     }
 }
