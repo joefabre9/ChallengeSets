@@ -74,17 +74,35 @@ namespace ChallengeSets
 
         public void ChangeBusinessNameTo_TrueCoders(Business biz)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+
+            biz.Name = "TrueCoders";
         }
 
         public bool CouldFormTriangle(int sideLength1, int sideLength2, int sideLength3)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (sideLength1 + sideLength2 > sideLength3 && sideLength1 +sideLength3 > sideLength2 && sideLength2 + sideLength3  > sideLength1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool IsStringANumber(string input)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            if (double.TryParse(input, out double value))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool MajorityOfElementsInArrayAreNull(object[] objs)
