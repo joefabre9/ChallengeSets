@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+//ChallengeSets worked on by Joe Fabre
+//Nov 3 2020
+using System;
 namespace ChallengeSets
 {
     public class ChallengeSet04
