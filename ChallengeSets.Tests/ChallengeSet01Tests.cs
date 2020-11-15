@@ -121,7 +121,7 @@ namespace ChallengeSets.Tests
         }
 
         [Theory]
-        [InlineData("John", "Hello, John!")]
+        [InlineData("0", "Hello, 0!")]
         [InlineData("Leigh", "Hello, Leigh!")]
         [InlineData("John Thomas", "Hello, John Thomas!")]
         [InlineData("Leigh Ann", "Hello, Leigh Ann!")]
@@ -149,7 +149,7 @@ namespace ChallengeSets.Tests
             string actual = challenger.GetHey();
 
             // Assert
-            Assert.Equal("HEY!", actual);
+            Assert.Equal("J9!", actual);
         }
     }
 }

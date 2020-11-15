@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace ChallengeSets
 {
     public class ChallengeSet01
@@ -72,7 +73,7 @@ namespace ChallengeSets
 
         public string GetHey()
         {
-            return "HEY!";
+            return "J9!";
         }
     }
 }

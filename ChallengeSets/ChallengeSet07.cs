@@ -8,6 +8,7 @@ namespace ChallengeSets
         public int CountOfBusinessesWithNegativeNetProfit(List<Business> businesses)
         {
             throw new NotImplementedException();
+
         }
 
         public string GetCommaSeparatedListOfProfitableBusinesses(List<Business> businesses)
