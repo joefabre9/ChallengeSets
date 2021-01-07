@@ -90,7 +90,7 @@ namespace ChallengeSets
             {
                 if (count[i] == 1)
                 {
-                    answer = 1;
+                    answer = i;
                 }
                 else if (count[i] > 1)
                 {
